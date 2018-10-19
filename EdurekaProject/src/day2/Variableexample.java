@@ -7,7 +7,16 @@ public class Variableexample {
 		int a = 10;
 		int b = 20;
 		
-		System.out.println(a+b);
+		if ( a<b ) {
+			System.out.println(b); }
+		
+		else if(a>b)
+		{
+		System.out.println(a);
+		}
+		else {
+			System.out.println("a=b");
+		}
 
 	}
 
