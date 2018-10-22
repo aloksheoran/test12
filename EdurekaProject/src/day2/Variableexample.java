@@ -15,7 +15,7 @@ public class Variableexample {
 		System.out.println(a);
 		}
 		else {
-			System.out.println("a=b");
+			System.out.println("a!=b");
 		}
 
 	}
