@@ -10,7 +10,7 @@ public class Variableexample {
 		if ( a<b ) {
 			System.out.println(b); }
 		
-		else if(a>b)
+		if(a>b)
 		{
 		System.out.println(a);
 		}
