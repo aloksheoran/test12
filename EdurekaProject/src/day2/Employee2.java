@@ -7,7 +7,7 @@ public class Employee2 {
           employee alok;
           alok = new employee();
           
-          alok.salary = 100000;
+          alok.salary = 10000;
           alok.bonus = 15000;
           alok.calculatesalary();
 
