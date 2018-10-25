@@ -7,6 +7,7 @@ public class workchrome {
            demoworkwithchrome ch = new demoworkwithchrome();
            
            ch.invokechrome();
+           ch.driver.quit();
 
 	}
 
