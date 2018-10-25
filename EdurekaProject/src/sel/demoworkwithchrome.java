@@ -8,10 +8,10 @@ public class demoworkwithchrome {
         
 		void invokechrome() {
 			
-			system.setproperty("webdriver.chrome.driver", "C:\\Users\\A\\eclipse-workspace\\libs\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:/Users/A/eclipse-workspace/libs/chromedriver.exe");
 			
 			driver.manage().window().maximize();
-			driver.manage().deleteAllcookies();
+			driver.manage().deleteAllCookies();
 			driver.get("http://google.com");
 		
 		}
