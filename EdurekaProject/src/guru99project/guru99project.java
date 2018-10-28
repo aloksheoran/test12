@@ -25,6 +25,11 @@ public class guru99project {
 		System.out.println(driver.getTitle());		
 	}
 	
+	public void browserclose() {
+		
+		driver.quit();
+	}
+	
 	public void login (String uname, String pwd) {
 		WebElement usid = driver.findElement(By.name("uid"));		
 		usid.sendKeys(uname);
