@@ -42,11 +42,19 @@ public class guru99project {
 		
 	public void addcustomer() {
 		driver.findElement(By.linkText("New Customer")).click();
-		
-		driver.findElement(By.xpath().click();
-		
-		
-		
+		driver.findElement(By.name("name")).sendKeys("Sapna");
+		driver.findElement(By.xpath("//input[@value='f']")).click();
+		driver.findElement(By.id("dob")).sendKeys("07/05/1984");
+		driver.findElement(By.name("addr")).sendKeys("whatever address");
+		driver.findElement(By.name("city")).sendKeys("Gurgaon");
+		driver.findElement(By.name("state")).sendKeys("Haryana");
+		driver.findElement(By.name("pinno")).sendKeys("122001");
+		driver.findElement(By.name("telephoneno")).sendKeys("9990980218");
+		String email = System.currentTimeMillis()+"@gmail.com" ;	
+		System.out.println(email);
+		driver.findElement(By.name("emailid")).sendKeys(email);	
+		driver.findElement(By.name("password")).sendKeys("qwer1234");
+		driver.findElement(By.name("Submit")).click();
 		
 	}
 	
