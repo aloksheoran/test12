@@ -8,7 +8,7 @@ public class Main_method {
 		
 		gp.invokechrome();
 		gp.printtitlepage();
-		gp.login("mnr160177", "hynydej");
+		gp.login("mngr160177", "hynydej");
 
 	}
 

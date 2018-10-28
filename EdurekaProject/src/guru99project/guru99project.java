@@ -12,7 +12,7 @@ public class guru99project {
 		
 	public void invokechrome() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\A\\eclipse-workspace\\libs\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+	    driver = new ChromeDriver();
 		Dimension dim = new Dimension(640,480);
 		driver.manage().window().setSize(dim);
 		driver.manage().window().maximize();
@@ -33,8 +33,9 @@ public class guru99project {
 		driver.findElement(By.name("password")).sendKeys(pwd);
 		driver.findElement(By.name("btnLogin")).click();
 		
-		
-		
 	}
+		
+	
+	
 
 }
