@@ -31,10 +31,10 @@ public class guru99project {
 	}
 	
 	public void login (String uname, String pwd) {
-		WebElement usid = driver.findElement(By.name("uid"));		
-		usid.sendKeys(uname);
+	//	WebElement usid = driver.findElement(By.name("uid"));		
+	//	usid.sendKeys(uname);
 		
-	 //   driver.findElement(By.name("uid")).sendKeys(uname);
+	    driver.findElement(By.name("uid")).sendKeys(uname);
 		driver.findElement(By.name("password")).sendKeys(pwd);
 		driver.findElement(By.name("btnLogin")).click();
 		
