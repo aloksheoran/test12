@@ -40,7 +40,15 @@ public class guru99project {
 		
 	}
 		
-	
+	public void addcustomer() {
+		driver.findElement(By.linkText("New Customer")).click();
+		
+		driver.findElement(By.xpath().click();
+		
+		
+		
+		
+	}
 	
 
 }
