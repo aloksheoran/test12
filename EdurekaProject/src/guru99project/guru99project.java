@@ -54,9 +54,13 @@ public class guru99project {
 		System.out.println(email);
 		driver.findElement(By.name("emailid")).sendKeys(email);	
 		driver.findElement(By.name("password")).sendKeys("qwer1234");
-		driver.findElement(By.name("Submit")).click();
+		driver.findElement(By.name("sub")).click();
 		
 	}
 	
+	public void getcustomeriD () {
+		
+		
+	}
 
 }
