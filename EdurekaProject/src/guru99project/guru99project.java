@@ -48,11 +48,9 @@ public class guru99project {
 		driver.findElement(By.xpath("//input[@value='f']")).click();
 		WebElement datebox = driver.findElement(By.xpath("//*[@id=\"dob\"]"));
 		datebox.sendKeys("15");
+		datebox.sendKeys("4");	 	 	
 		datebox.sendKeys(Keys.TAB);
-		datebox.sendKeys("04");
-		datebox.sendKeys(Keys.TAB);
-		datebox.sendKeys("1986");
-			
+		datebox.sendKeys("1986");			
 	//	driver.findElement(By.id("dob")).sendKeys("07081984");
 		driver.findElement(By.name("addr")).sendKeys("whatever address");
 		driver.findElement(By.name("city")).sendKeys("Gurgaon");
@@ -83,7 +81,7 @@ public class guru99project {
 		boolean flag = dropdown.isMultiple();
 		System.out.println(flag);
 		driver.findElement(By.name("inideposit")).sendKeys("1500");
-		driver.findElement(By.name("submit")).click();
+		driver.findElement(By.xpath("//table/tbody/tr[5]/td[2]/input[1]")).click();
 		
 	}
 }
