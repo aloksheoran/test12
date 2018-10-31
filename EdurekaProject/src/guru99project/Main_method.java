@@ -10,7 +10,10 @@ public class Main_method {
 		gp.printtitlepage();
 		gp.login("mngr160177", "hynydej");
 		gp.addcustomer();
-		gp.browserclose();
+		String custid = gp.getcustomeriD();		
+		System.out.println("customerid"+custid);
+		gp.addaccount(custid);
+	//	gp.browserclose();
 
 	}
 

@@ -2,9 +2,11 @@ package guru99project;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class guru99project {
 	
@@ -44,7 +46,14 @@ public class guru99project {
 		driver.findElement(By.linkText("New Customer")).click();
 		driver.findElement(By.name("name")).sendKeys("Sapna");
 		driver.findElement(By.xpath("//input[@value='f']")).click();
-		driver.findElement(By.id("dob")).sendKeys("07/05/1984");
+		WebElement datebox = driver.findElement(By.xpath("//*[@id=\"dob\"]"));
+		datebox.sendKeys("15");
+		datebox.sendKeys(Keys.TAB);
+		datebox.sendKeys("04");
+		datebox.sendKeys(Keys.TAB);
+		datebox.sendKeys("1986");
+			
+	//	driver.findElement(By.id("dob")).sendKeys("07081984");
 		driver.findElement(By.name("addr")).sendKeys("whatever address");
 		driver.findElement(By.name("city")).sendKeys("Gurgaon");
 		driver.findElement(By.name("state")).sendKeys("Haryana");
@@ -58,9 +67,28 @@ public class guru99project {
 		
 	}
 	
-	public void getcustomeriD () {
+	public String getcustomeriD () {
 		
+		return driver.findElement(By.xpath("//table[@id='customer']/tbody/tr[4]/td[2]")).getText();
 		
 	}
 
+	
+	public void addaccount(String custid)  {
+		driver.findElement(By.linkText("New Account")).click();
+		driver.findElement(By.name("cusid")).sendKeys(custid);
+		WebElement selectacctype = driver.findElement(By.name("selaccount"));
+		Select dropdown = new Select(selectacctype);
+		dropdown.selectByVisibleText("Savings");
+		boolean flag = dropdown.isMultiple();
+		System.out.println(flag);
+		driver.findElement(By.name("inideposit")).sendKeys("1500");
+		driver.findElement(By.name("submit")).click();
+		
+	}
 }
+
+
+
+
+
