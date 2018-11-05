@@ -1,5 +1,6 @@
 package guru99project;
 
+import java.util.Random;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
@@ -48,6 +49,7 @@ public class guru99project {
 		driver.findElement(By.xpath("//input[@value='f']")).click();
 		WebElement datebox = driver.findElement(By.xpath("//*[@id=\"dob\"]"));
 		datebox.sendKeys("15");
+	//	datebox.sendKeys(Keys.TAB);
 		datebox.sendKeys("4");	 	 	
 		datebox.sendKeys(Keys.TAB);
 		datebox.sendKeys("1986");			
@@ -84,9 +86,28 @@ public class guru99project {
 		driver.findElement(By.xpath("//table/tbody/tr[5]/td[2]/input[1]")).click();
 		
 	}
+
+	public void editaccount (String custid) {
+		
+		driver.findElement(By.linkText("Edit Customer")).click();
+		driver.findElement(By.xpath("//table/tbody/tr[6]/td[2]/input")).sendKeys(custid);
+		driver.findElement(By.name("AccSubmit")).click();
+		driver.findElement(By.xpath("//table/tbody/tr[7]/td[2]/textarea")).sendKeys("Raman ji"+nextInt());
+		driver.findElement(By.name("sub")).click();
+		WebElement a = driver.findElement(By.xpath("//tbody/tr[8]/td[2]"));
+		System.out.println(a);
+		
+	}
+
+	private int nextInt() {
+		
+		Random randomNum = new Random();
+		int a = randomNum.nextInt(100);		
+		return a;
+	
+	}
+
+
+
+
 }
-
-
-
-
-

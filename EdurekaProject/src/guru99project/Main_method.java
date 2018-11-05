@@ -11,8 +11,9 @@ public class Main_method {
 		gp.login("mngr160177", "hynydej");
 		gp.addcustomer();
 		String custid = gp.getcustomeriD();		
-		System.out.println("customerid"+custid);
+		System.out.println("customerid > "+custid);
 		gp.addaccount(custid);
+		gp.editaccount(custid);
 	//	gp.browserclose();
 
 	}
