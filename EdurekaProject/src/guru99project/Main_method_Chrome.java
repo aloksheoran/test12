@@ -1,10 +1,10 @@
 package guru99project;
 
-public class Main_method {
+public class Main_method_Chrome {
 
 	public static void main(String[] args) {
 		
-		guru99project gp = new guru99project();
+		guru99projectchrome gp = new guru99projectchrome();
 		
 		gp.invokechrome();
 		gp.printtitlepage();

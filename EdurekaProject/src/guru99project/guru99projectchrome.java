@@ -9,13 +9,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class guru99project {
+public class guru99projectchrome {
 	
- public WebDriver driver;
+ public ChromeDriver driver;
 		
 	public void invokechrome() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\A\\eclipse-workspace\\libs\\chromedriver.exe");
-	    driver = new ChromeDriver();
+	 driver = new ChromeDriver();
 		Dimension dim = new Dimension(640,480);
 		driver.manage().window().setSize(dim);
 		driver.manage().window().maximize();
