@@ -17,7 +17,7 @@ public class Workwithfirefox {
 			driver.manage().window().setSize(dim);
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(77, TimeUnit.SECONDS);
 			driver.get("http://demo.guru99.com/v4");		
 			
 		}
