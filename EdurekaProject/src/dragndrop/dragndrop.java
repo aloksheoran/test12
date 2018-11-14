@@ -24,6 +24,7 @@ public class dragndrop {
 		WebElement tg = driver.findElement(By.id("droppable"));
 		Actions ac = new Actions (driver);
 		ac.dragAndDrop(sc, tg).build().perform();
+		driver.quit();
 		
 	}
 

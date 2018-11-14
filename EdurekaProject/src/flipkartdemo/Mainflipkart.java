@@ -6,6 +6,7 @@ public class Mainflipkart {
 		
 		Flipkartmethods fff = new Flipkartmethods();
 		fff.invokefirefoxflipkart();
+		fff.closelogin();
 	    fff.searchlaptop();
 	    fff.exitfirefoxflipkart();
 		

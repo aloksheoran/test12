@@ -14,7 +14,7 @@ public class Flipkartmethods {
 	public void invokefirefoxflipkart () {
 		
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\A\\eclipse-workspace\\libs\\geckodriver.exe");
-		FirefoxDriver driver = new FirefoxDriver();
+		driver = new FirefoxDriver();
 		Dimension dim = new Dimension(640,480);
 		driver.manage().window().setSize(dim);
 		driver.manage().window().maximize();
@@ -40,8 +40,8 @@ public class Flipkartmethods {
 	
 	public void searchlaptop () {
 		
-		driver.findElement(By.xpath("//input[@class='LM6RPg']")).sendKeys("laptop");
-
+		driver.findElement(By.xpath("//input[@class='LM6RPg']")).sendKeys("laptop");		
+		driver.findElement(By.xpath("//*[@class='vh79eN']")).click();
 		driver.findElement(By.xpath("//div[contains(text(),'Popularity')]")).click();
 	}
 	
